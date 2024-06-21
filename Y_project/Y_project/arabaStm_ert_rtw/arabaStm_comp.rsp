@@ -1,0 +1,20 @@
+-IC:/Users/yigit/Documents/araba/Y_project/Y_project
+-IC:/ProgramData/MATLAB/SupportPackages/R2023b/toolbox/shared/supportpackages/stm32/include
+-IC:/Users/yigit/Documents/araba/Y_project/Y_project/arabaStm_ert_rtw
+-IC:/Program\ Files/MATLAB/R2023b/extern/include
+-IC:/Program\ Files/MATLAB/R2023b/simulink/include
+-IC:/Program\ Files/MATLAB/R2023b/rtw/c/src
+-IC:/Program\ Files/MATLAB/R2023b/rtw/c/src/ext_mode/common
+-IC:/Program\ Files/MATLAB/R2023b/rtw/c/ert
+-IC:/Program\ Files/MATLAB/R2023b/toolbox/target/shared/armcortexmbase/scheduler/include
+-IC:/Program\ Files/MATLAB/R2023b/toolbox/target/shared/armcortexmbase/xcp/include
+-IC:/Program\ Files/MATLAB/R2023b/rtw/c/src/ext_mode/serial
+-IC:/Program\ Files/MATLAB/R2023b/toolbox/target/shared/svd/common/include
+-IC:/ProgramData/MATLAB/SupportPackages/R2023b/3P.instrset/cmsis.instrset/CMSIS/Core/Include
+-IC:/ProgramData/MATLAB/SupportPackages/R2023b/3P.instrset/cmsis_dsp.instrset/Include
+-IC:/ProgramData/MATLAB/SupportPackages/R2023b/3P.instrset/cmsis_dsp.instrset/Include/dsp
+-IC:/Users/yigit/Documents/araba/Y_project/Y_project/araba/Drivers/STM32F4xx_HAL_Driver/Inc
+-IC:/Users/yigit/Documents/araba/Y_project/Y_project/araba/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy
+-IC:/Users/yigit/Documents/araba/Y_project/Y_project/araba/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+-IC:/Users/yigit/Documents/araba/Y_project/Y_project/araba/Drivers/CMSIS/Include
+-IC:/Users/yigit/Documents/araba/Y_project/Y_project/araba/Core/Inc

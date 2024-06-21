@@ -1,0 +1,10 @@
+config load "C:\Users\yigit\Documents\araba\Y_project\Y_project\araba\araba.ioc"
+project toolchain STM32CubeIDE
+
+SetStructure Advanced
+
+project setCustomFWPath "C:\Users\yigit\STM32Cube\Repository\STM32Cube_FW_F4_V1.26.2"
+
+project generate 
+
+exit wait

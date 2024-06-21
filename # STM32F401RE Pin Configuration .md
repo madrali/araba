@@ -1,68 +1,33 @@
-# STM32F401RE Pin Configuration for Motor Control and UART Communication
+# STM32F401RE Nucleo Kartı Pin Mapping
 
-## Overview
+## ST-Link ile Bağlı Pinler
+| Pin Adı | STM32 Pin | Kullanım Amacı        |
+|---------|-----------|-----------------------|
+| CN3_13  | PA13      | SWDIO                 |
+| CN3_15  | PA14      | SWCLK                 |
+| CN3_1   | NRST      | Reset                 |
 
-This document outlines the pin configuration for the STM32F401RE Nucleo board for controlling two motors using the IHM15A1 motor driver and UART communication with an ESP32 using USART6.
+## IHM15A1 ile Bağlı Pinler
 
-## Pin Configuration Table
+### Motor A
 
-| Function                  | IHM15A1 Pin | STM32 Pin  | Timer   | Channel       | Description                      |
-|---------------------------|-------------|------------|---------|---------------|----------------------------------|
-| **USART6 Communication**  |             |            |         |               |                                  |
-| USART6 TX (ESP32)         | -           | PC6        | -       | -             | USART6 Transmit                  |
-| USART6 RX (ESP32)         | -           | PC7        | -       | -             | USART6 Receive                   |
-| **Motor A (Right Motor)** |             |            |         |               |                                  |
-| PWM Signal (PWM_A)        | D5          | PA8        | TIM1    | Channel 1     | PWM signal for Motor A           |
-| Enable Signal (EN_A)      | D9          | PA8        | -       | -             | Enable signal for Motor A        |
-| Direction Signal (DIR_A)  | D2          | PA0        | -       | -             | Direction signal for Motor A     |
-| Brake Signal (BRK_A)      | D1          | PB1        | -       | -             | Brake signal for Motor A         |
-| **Motor B (Left Motor)**  |             |            |         |               |                                  |
-| PWM Signal (PWM_B)        | D6          | PA1        | TIM5    | Channel 2     | PWM signal for Motor B           |
-| Enable Signal (EN_B)      | D10         | PA9        | -       | -             | Enable signal for Motor B        |
-| Direction Signal (DIR_B)  | D4          | PA10       | -       | -             | Direction signal for Motor B     |
-| Brake Signal (BRK_B)      | D3          | PB2        | -       | -             | Brake signal for Motor B         |
-| **Fault Signals**         |             |            |         |               |                                  |
-| Fault Signal A (FAULT_A)  | D11         | PA10       | -       | -             | Fault signal for Motor A         |
-| Fault Signal B (FAULT_B)  | D12         | PA11       | -       | -             | Fault signal for Motor B         |
-| **Additional Peripherals**|             |            |         |               |                                  |
-| Fault Indicator LED       | -           | PB0        | -       | -             | Indicator LED for faults         |
-| **Current Sensing**       |             |            |         |               |                                  |
-| Current Sense A           | A1          | PA4 (ADC1_IN4) | -   | -             | Current feedback for Motor A     |
-| Current Sense B           | A2          | PA5 (ADC1_IN5) | -   | -             | Current feedback for Motor B     |
+| Pin Adı | STM32 Pin | Kullanım Amacı        |
+|---------|-----------|-----------------------|
+| CN9_6   | PB4       | Motor A PWM           |
+| CN5_4   | PA7       | Motor A ENABLE/FAULT  |
+| CN5_10  | PB8       | Motor A AKIM LIMITI   |
+| CN9_4   | PB3       | Motor A YON           |
 
-## Function Explanations
+### Motor B
 
-### USART6 Communication
+| CN5_9   | PB9       | Motor B AKIM LIMITI   |
+| CN9_3   | PA10      | Motor B ENABLE/FAULT  |
+| CN9_5   | PB5       | Motor B PWM           |
+| CN9_8   | PA8       | Motor B YON           |
 
-**USART6** is used for UART communication with the ESP32.
 
-- **TX (Transmit)**: PC6
-- **RX (Receive)**: PC7
-
-### Motor A (Right Motor)
-
-Controlled using **TIM1**:
-
-- **PWM Signal (PWM_A)**: PA8 (TIM1 Channel 1)
-- **Enable Signal (EN_A)**: PA8
-- **Direction Signal (DIR_A)**: PA0
-
-### Motor B (Left Motor)
-
-Controlled using **TIM5**:
-
-- **PWM Signal (PWM_B)**: PA1 (TIM5 Channel 2)
-- **Enable Signal (EN_B)**: PA9
-- **Direction Signal (DIR_B)**: PA10
-
-### Brake and Fault Signals
-
-- **Brake Signal (BRK_A)**: PB1 for Motor A.
-- **Brake Signal (BRK_B)**: PB2 for Motor B.
-- **Fault Signal A (FAULT_A)**: PA10
-- **Fault Signal B (FAULT_B)**: PA11
-
-### Current Sensing
-
-- **Current Sense A**: PA4 (ADC1_IN4) for Motor A.
-- **Current Sense B**: PA5 (ADC1_IN5) for Motor B.
+## ESP32 ASENKRON UART Pinleri
+| Pin Adı | STM32 Pin | Kullanım Amacı      |
+|---------|-----------|---------------------|
+| PA2     | PA2       | UART TX             |
+| PA3     | PA3       | UART RX             |
