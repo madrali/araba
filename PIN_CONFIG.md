@@ -9,8 +9,6 @@
 
 ## IHM15A1 ile Bağlı Pinler
 
-### Motor A
-
 | Pin Adı | STM32 Pin | Açıklama              |
 |---------|-----------|-----------------------|
 | CN9_6   | PB4       | Motor A PWM           |
@@ -18,7 +16,6 @@
 | CN5_10  | PB8       | Motor A AKIM LIMITI   |
 | CN9_4   | PB3       | Motor A YON           |
 |---------|-----------|-----------------------|
-### Motor B
 |---------|-----------|-----------------------|
 | CN5_9   | PB9       | Motor B AKIM LIMITI   |
 | CN9_3   | PA10      | Motor B ENABLE/FAULT  |
