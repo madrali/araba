@@ -17,9 +17,9 @@
 | CN5_4   | PA7       | Motor A ENABLE/FAULT  |
 | CN5_10  | PB8       | Motor A AKIM LIMITI   |
 | CN9_4   | PB3       | Motor A YON           |
-
+|---------|-----------|-----------------------|
 ### Motor B
-
+|---------|-----------|-----------------------|
 | CN5_9   | PB9       | Motor B AKIM LIMITI   |
 | CN9_3   | PA10      | Motor B ENABLE/FAULT  |
 | CN9_5   | PB5       | Motor B PWM           |
