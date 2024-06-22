@@ -1,7 +1,7 @@
-# STM32F401RE Nucleo Kartı Pin Mapping
+# STM32F401RE IHM15A1 ESP32_S2_SOALA
 
 ## ST-Link ile Bağlı Pinler
-| Pin Adı | STM32 Pin | Kullanım Amacı        |
+| Pin Adı | STM32 Pin | Açıklama              |
 |---------|-----------|-----------------------|
 | CN3_13  | PA13      | SWDIO                 |
 | CN3_15  | PA14      | SWCLK                 |
@@ -11,7 +11,7 @@
 
 ### Motor A
 
-| Pin Adı | STM32 Pin | Kullanım Amacı        |
+| Pin Adı | STM32 Pin | Açıklama              |
 |---------|-----------|-----------------------|
 | CN9_6   | PB4       | Motor A PWM           |
 | CN5_4   | PA7       | Motor A ENABLE/FAULT  |
